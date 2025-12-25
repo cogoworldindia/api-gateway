@@ -31,7 +31,7 @@ app = FastAPI(
 )
 
 # Include routers
-app.include_router(api_router, prefix="/v1/api", tags=["Application"])
+app.include_router(api_router, prefix="/v1", tags=["Application"])
 
 # Health check route
 @app.get("/health", tags=["Health"])
